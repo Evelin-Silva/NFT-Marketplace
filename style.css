@@ -1,8 +1,14 @@
 :root{
-    --primary-font: font-family: 'Poppins', sans-serif;;
-    --secondary-font: font-family: 'Radio Canada', sans-serif;;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Radio Canada', sans-serif;
     --primary-color: rgba(120, 121, 241, 1);
     --secondary-color: rgba(165, 166, 246, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,16 +17,121 @@ body{
     background-size: cover;
 }
 
-nav{
+header{
     background: linear-gradient(106.6deg, rgba(19, 8, 42, 0.32) 1.44%, rgba(126, 126, 126, 0) 108.41%);
+    backdrop-filter: blur(3.09568px);
+    padding: 41px 77.5px 32px 77.5px;
+}
+
+nav{
     color: white;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
 }
 
 ul{
     list-style: none;
+    display: flex;
+    gap: 24px;
+    font-weight: 400;
+}
+
+button{
+    font-family: var(--primary-font);
+    height: 59px;
+    width: 198px;
+    font-weight: 600;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-size: 18px;
 }
 
 nav h1{
     font-weight: 900;
     font-size: 27.05px;
+}
+
+nav button{
+    background-color: var(--primary-color);
+}
+
+main{
+    margin-top: 19px;
+}
+
+.main-content{
+    height: 527px;
+    width: 830px;
+    margin: 127px 0 0 80px;
+    line-height: 96px;
+}
+
+.main-content h1{
+    font-size: 96px;
+    font-family: var(--primary-font);
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.main-content h2{
+    font-size: 24px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.main-content img{
+    margin-bottom: -20px;
+    margin-left: -280px;
+}
+
+span{
+    color: var(--secondary-color);
+}
+
+#content-buttons{
+    margin-top: 80px;
+    display: flex;
+    gap: 16px;
+}
+
+#explore-button{
+    background-color: var(--primary-color);
+}
+
+#create-button{
+    background-color: transparent;
+    border: var(--primary-color) 1.5px solid;
+    color: var(--primary-color);
+}
+
+#display-info{
+    display: flex;
+    text-align: center;
+    gap: 52px;
+    margin: 72px 0 40px 85px;
+}
+
+.info h1{
+    font-family: var(--primary-font);
+    font-size: 52px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.info p{
+    font-family: var(--primary-font);
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+li:hover{
+    font-weight: 800;
+    text-decoration: underline;
 }
